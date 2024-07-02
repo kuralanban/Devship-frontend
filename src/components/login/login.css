@@ -1,0 +1,26 @@
+.signupForm {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2.5px 5px 5px hsl(0deg 0% 0% / 0.42);
+  width: 330px;
+}
+
+.signInbutton {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(17, 107, 224);
+  color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.formInput {
+  padding: 7px;
+}
+.signUp {
+  display: flex;
+  justify-content: center;
+}
+.signupForm div {
+  margin-bottom: 5px;
+}

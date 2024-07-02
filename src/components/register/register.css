@@ -1,4 +1,58 @@
-
-.registerForm{
-display: flex;
+.registerForm,
+.container,
+.form div,
+.formDivBox2 div,
+.formDivBox3 div,
+.formDivBox1 div ,.registerPage,.signIn,.box1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container,.formDivBox2 div,.formDivBox3 div,.formDivBox1 div,.signIn,.registerForm{
+  flex-direction: column;
+}
+.formDivBox2 div,.formDivBox3 div,.formDivBox1 div{
+align-items: flex-start;
+}
+.registerForm {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2.5px 5.0px 5.0px hsl(0deg 0% 0% / 0.42);
+}
+.container {
+  height: 100vh;
+}
+.form div {
+  padding: 7px;
+}
+.btn button{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(17, 107, 224);
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.registerPage{
+  flex-direction: column;
+}
+.title{
+  font-size: x-large;
+  font-weight: 1000;
+}
+.signUp{
+  width: 100%;
+}
+.formImg{
+  height: 330px;
+  position: relative;
+  top: 30px;
+}
+.signIn div{
+  padding: 10px;
+}
+.signIn span {
+  color: var(--blue ) ;
+  cursor: pointer;
 }
