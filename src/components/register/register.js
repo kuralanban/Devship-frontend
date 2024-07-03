@@ -14,7 +14,7 @@ function Register() {
     password: "",
     confirmPassword: "",
   });
-
+ 
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
@@ -32,10 +32,13 @@ function Register() {
     if (!formData.lastName) {
       newErrors.lastName = "Lastname is required";
     }
+    if (!formData.username) {
+      newErrors.username = "Username is required";
+    }
     if (!userEmailPattern.test(formData.email)) {
       newErrors.email = "Invalid email Address";
     }
-    if (formData.password.length <= 8) {
+    if (formData.password.length <= 8 ) {
       newErrors.password = "Password must be at least 8 characters";
     }
     if (formData.password !== formData.confirmPassword) {
